@@ -5,8 +5,8 @@ Repo dedicated to Mentorship pilot <br>
 A repo dedicated to a #makeovermonday style weekly projects as result of collaboration between students and mentors @ R4DS community.
 
 # Project Outline
-- on regular basis as output of the mentor-learner/student partnership on a project during a week 
-- train to go through full Data Science cycle/process capturing transformation from raw, messy real-world dataset into tidy form and the output/model, visualization or final document/published via RPubs or as Jupyter notebook via GitHub
+- On regular basis as output of the mentor-learner/student partnership on a project during a week 
+- Train to go through full Data Science cycle/process capturing transformation from raw, messy real-world dataset into tidy form and the output/model, visualization or final document/published via RPubs or as Jupyter notebook via GitHub
 - More on #MakeoverMonday here (for those that are not yet familiar with it): http://www.makeovermonday.co.uk
 - Share your work via Twitter and other social networks with #TidyWeek (as for the name & hashtag of the project + TidyWeek also because the students will have to “tidy” the messy/real-world dataset first and will have a week to create the output from the given dataset via RPubs document or a Jupyter notebook published on GitHub with the help/oversight of the mentor) 
 - Others can/will be able to vote & rank (Kaggle-style kernel)
