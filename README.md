@@ -1,11 +1,11 @@
-![R for Data Science online learning community](https://github.com/rfordatascience/tidyweek/blob/master/rest/31736571%20(1).png) 
-
 # TidyWeek
 Repo dedicated to Mentorship pilot / TidyWeek <br>
 
 hashtag: #TidyWeek 
 
 A repo dedicated to a #makeovermonday style weekly projects as result of collaboration between students and mentors @ R4DS community.
+
+![R for Data Science online learning community](https://github.com/rfordatascience/tidyweek/blob/master/rest/31736571%20(1).png) 
 
 # Project Outline
 - On regular basis as output of the mentor-learner/student partnership on a project during a week 
