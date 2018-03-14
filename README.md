@@ -15,6 +15,13 @@ A repo dedicated to a #makeovermonday style weekly projects as result of collabo
 - Others can/will be able to vote & rank (Kaggle-style kernel)
 - Students will build their Data Science portfolio/projects that they were working on together with a mentor from R4DS community
 
+# Schedule
+
+Test Version | 1st TidyWeek
+------------ | -------------
+end of March | 2nd April
+R4DS Mentors | R4DS Students
+
 # Working with Git and Github
 
 ## What is Git?
