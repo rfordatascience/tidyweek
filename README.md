@@ -45,6 +45,7 @@ These following resources are fantastic comprehensive guides to working with Git
 *  [Version Control with Git from the Software Carpentries](https://swcarpentry.github.io/git-novice/)
 *  [Free DataCamp Course: Introduction to Git for Data Science](https://www.datacamp.com/courses/introduction-to-git-for-data-science)
 *  [Mastering Markdown](https://guides.github.com/features/mastering-markdown/), [(pdf)](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
+*  [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 
 ## GitHub Tutorial
 
