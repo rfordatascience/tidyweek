@@ -1,6 +1,7 @@
-# tidyweek
-Repo dedicated to Mentorship pilot <br>
-#TidyWeek & #TidyTuesday
+# TidyWeek
+Repo dedicated to Mentorship pilot / TidyWeek <br>
+
+hashtag: #TidyWeek 
 
 A repo dedicated to a #makeovermonday style weekly projects as result of collaboration between students and mentors @ R4DS community.
 
