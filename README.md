@@ -15,6 +15,13 @@ A repo dedicated to a #makeovermonday style weekly projects as result of collabo
 - Others can/will be able to vote & rank (Kaggle-style kernel)
 - Students will build their Data Science portfolio/projects that they were working on together with a mentor from R4DS community
 
+#tidy data 
+[Hadley Wickham's Tidy Data](http://vita.had.co.nz/papers/tidy-data.pdf) framework  suggests tidy data must have three properties:
+Each variable forms a column.
+Each observation forms a row.
+Each type of observational unit forms a table
+
+
 # Schedule
 
 Test Version | Start/1st #TidyWeek
