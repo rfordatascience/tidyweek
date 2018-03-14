@@ -1,3 +1,5 @@
+![R for Data Science online learning community](https://github.com/rfordatascience/tidyweek/blob/master/rest/31736571%20(1).png) 
+
 # TidyWeek
 Repo dedicated to Mentorship pilot / TidyWeek <br>
 
