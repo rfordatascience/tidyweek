@@ -17,9 +17,9 @@ A repo dedicated to a #makeovermonday style weekly projects as result of collabo
 
 # Schedule
 
-Test Version | 1st TidyWeek
+Test Version | Start/1st #TidyWeek
 ------------ | -------------
-end of March | 2nd April
+End of March | 2nd April
 R4DS Mentors | R4DS Students
 
 # Working with Git and Github
