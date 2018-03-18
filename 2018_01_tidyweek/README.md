@@ -14,9 +14,9 @@ Dataset: https://datacatalog.worldbank.org/dataset/world-development-indicators 
 -------------------------------------------------------------------------------------------
 ## Create project
 ![Create project](https://github.com/rfordatascience/tidyweek/blob/master/rest/data.world_project.png) 
-## Select your tools
+## Select your tools (R indeed in our case)
 ![Select your tools](https://github.com/rfordatascience/tidyweek/blob/master/rest/data.world_r_tool.png) 
-## Create Rmd document/Open in App
+## Create Rmd document/Open in App (and we will work with it later in RStudio/now we will only generate Rmd)
 ![Create Rmd document/Open in App](https://github.com/rfordatascience/tidyweek/blob/master/rest/data.world_r.png) 
 -------------------------------------------------------------------------------------------
 # Instructions/What should the repo of a participant include:
