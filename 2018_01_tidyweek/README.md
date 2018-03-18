@@ -2,7 +2,7 @@
 
 Dataset: https://datacatalog.worldbank.org/dataset/world-development-indicators <br>
 @[[csv/zip]](http://databank.worldbank.org/data/download/WDI_csv.zip) via http://databank.worldbank.org/data/download/WDI_csv.zip <br>
-@[[Data.World]](https://data.world/radovankavicky/2018-01-tidyweek) via https://data.world/radovankavicky/2018-01-tidyweek<br>
+@[[Data.World]](https://data.world/radovankavicky/2018-01-tidyweek) via https://data.world/radovankavicky/2018-01-tidyweek<br> ![insert image or chart](https://github.com/rfordatascience/tidyweek/blob/master/rest/31736571%20(1).png)
 
 # Objectives (mark as [x] if done)
 - [ ] Create a new project
@@ -16,7 +16,6 @@ Dataset: https://datacatalog.worldbank.org/dataset/world-development-indicators 
 
 # About section (Dataset & Project)
 What is included in this data? What isn't included? Where did it come from?
-![insert image or chart](https://github.com/rfordatascience/tidyweek/blob/master/rest/31736571%20(1).png)
 
 # Participants (Name of the Student & Mentor)
 
