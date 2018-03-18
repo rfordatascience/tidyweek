@@ -14,7 +14,7 @@ A repo dedicated to a #makeovermonday style weekly projects as result of collabo
 - Train & walk-through full Data Science cycle/process capturing transformation from raw, messy real-world dataset into tidy form and the output/model, visualization or final document/published via Data.World or as Jupyter notebook with IRkernel via GitHub
 - More on #MakeoverMonday here (for those that are not yet familiar with it): http://www.makeovermonday.co.uk
 - Share your work via Twitter and other social networks with #TidyWeek (as for the name & hashtag of the project + TidyWeek also because the students will have to “tidy” the messy/real-world dataset first and will have a week to create the output from the given dataset via RPubs document or a Jupyter notebook published on GitHub with the help/oversight of the mentor) 
-- Others can/will be able to vote & rank (https://data.world or your own GitHub repo/RMd Notebook or Jupyter notebook)
+- Others can/will be able to vote & rank (https://data.world or your own GitHub repo/Rmd Notebook or Jupyter notebook)
 - Students will build their Data Science portfolio/projects that they were working on together with a mentor from R4DS community
 
 # Tidy data 
