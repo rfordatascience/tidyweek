@@ -11,13 +11,17 @@ Dataset: https://datacatalog.worldbank.org/dataset/world-development-indicators 
 - Make comparison
 - Crate visualization
 - Publish your result/output at https://data.world
+-------------------------------------------------------------------------------------------
+# Instrusctions/What should the repo of a participant include:
 
-# About this Dataset
+# About section (Dataset & Project)
 What is included in this data? What isn't included? Where did it come from?
-![supporting image or chart](http://example.com/image.png)
+![insert image or chart](https://github.com/rfordatascience/tidyweek/blob/master/rest/31736571%20(1).png)
+
+# Participants (Name of the Student & Mentor)
 
 # Objectives
-What are the goals or questions you're investigating with this data?
+What are your goals or questions you're investigating with this data?
 
 # Background
 * How did this dataset come about?
@@ -31,4 +35,4 @@ How can others contribute?
 
 # External resources
 * [github repo](https://github.com/you/your-repo)
-* [website](https://mycompany.com)
+* [link to yout website](https://mycwebsite.com)
