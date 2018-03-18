@@ -11,6 +11,12 @@ Dataset: https://datacatalog.worldbank.org/dataset/world-development-indicators 
 - [ ] Make comparison (in time)
 - [ ] Crate visualization in your favourite R DataViz library (simple line chart)
 - [ ] Publish your result/output and link it to #TidyWeek
+
+-------------------------------------------------------------------------------------------
+## Create project
+![Create project](https://github.com/rfordatascience/tidyweek/blob/master/rest/data.world_r.png) 
+## Create Rmd document/Open in App
+![Create Rmd document/Open in App](https://github.com/rfordatascience/tidyweek/blob/master/rest/data.world_r.png) 
 -------------------------------------------------------------------------------------------
 # Instructions/What should the repo of a participant include:
 
