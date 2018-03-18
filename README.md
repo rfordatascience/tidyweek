@@ -22,7 +22,7 @@ A repo dedicated to a #makeovermonday style weekly projects as result of collabo
 * Each type of observational unit forms a table  
 
 # 1st week/test
-[01/2018 - Instructions]https://github.com/rfordatascience/tidyweek/blob/master/2018_01_tidyweek/Instructions.md
+[01/2018 - Instructions](https://github.com/rfordatascience/tidyweek/blob/master/2018_01_tidyweek/Instructions.md)
 
 # Schedule
 
