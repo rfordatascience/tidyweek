@@ -1,8 +1,8 @@
 # TidyWeek #1
 
-Dataset: https://datacatalog.worldbank.org/dataset/world-development-indicators
-[csv/zip](http://databank.worldbank.org/data/download/WDI_csv.zip)
-[Data.World](https://data.world/radovankavicky/2018-01-tidyweek)
+Dataset: https://datacatalog.worldbank.org/dataset/world-development-indicators <br>
+[csv/zip](http://databank.worldbank.org/data/download/WDI_csv.zip) <br>
+[Data.World](https://data.world/radovankavicky/2018-01-tidyweek) <br>
 
 # Objectives
 - Create a new project
