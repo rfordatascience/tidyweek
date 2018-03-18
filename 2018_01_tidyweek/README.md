@@ -6,7 +6,7 @@ Dataset: https://datacatalog.worldbank.org/dataset/world-development-indicators 
 
 # Objectives (mark as [x] if done)
 - [ ] Create a new project
-- [ ] Download & Import data into R
+- [ ] Download [into data folder] & Import data into R
 - [ ] Select an indicator from the dataset
 - [ ] Make comparison (in time)
 - [ ] Crate visualization in your favourite R DataViz library (simple line chart)
