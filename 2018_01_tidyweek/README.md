@@ -5,14 +5,14 @@ Dataset: https://datacatalog.worldbank.org/dataset/world-development-indicators 
 @[[Data.World]](https://data.world/radovankavicky/2018-01-tidyweek) via https://data.world/radovankavicky/2018-01-tidyweek<br>
 
 # Objectives
-- Create a new project
-- Download & Import data into R
-- Select an indicator from the dataset
-- Make comparison
-- Crate visualization
-- Publish your result/output at https://data.world
+- [ ] Create a new project
+- [ ] Download & Import data into R
+- [ ] Select an indicator from the dataset
+- [ ] Make comparison
+- [ ] Crate visualization
+- [ ] Publish your result/output 
 -------------------------------------------------------------------------------------------
-# Instrusctions/What should the repo of a participant include:
+# Instructions/What should the repo of a participant include:
 
 # About section (Dataset & Project)
 What is included in this data? What isn't included? Where did it come from?
@@ -20,7 +20,7 @@ What is included in this data? What isn't included? Where did it come from?
 
 # Participants (Name of the Student & Mentor)
 
-# Objectives
+# Objectives 
 What are your goals or questions you're investigating with this data?
 
 # Background
@@ -35,4 +35,4 @@ How can others contribute?
 
 # External resources
 * [github repo](https://github.com/you/your-repo)
-* [link to yout website](https://mycwebsite.com)
+* [link to yout website](https://mywebsite.com)
