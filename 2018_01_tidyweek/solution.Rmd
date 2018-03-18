@@ -1,0 +1,139 @@
+title: "DC rbokeh"
+author: "Radovan Kavicky"
+date: "18 March 2018"
+output: html_notebook
+
+data2: https://data.worldbank.org/data-catalog/world-development-indicators
+data: https://data.worldbank.org/data-catalog
+---
+###Data from [World bank](https://data.worldbank.org/data-catalog/world-development-indicators), after download, also unzip into "your Working directory/data" and choose/import "WDIData.csv". 
+#### - First, we will load the .csv (nearly 200 MB/it will take a while) 
+```{r, echo=TRUE, message=FALSE, warning = FALSE}
+library(readr)
+library(dplyr)
+dat <- read_csv("data/WDIData.csv")
+```
+## Data
+#### - Check the imported data 
+```{r, echo=TRUE, message=FALSE, warning = FALSE}
+dat
+```
+## Data (different view)
+#### - Check the data structure (via dplyr's Glimpse function).
+```{r, echo=TRUE, message=FALSE, warning = FALSE}
+glimpse(dat)
+```
+## Let's filter & tidy this mess
+#### - Select one (GDP growth from 60's till 2016) indicator for UK, USA and EU + Make checking data via Glimpse great again!
+```{r}
+library(tidyr)
+dc <- dat %>% 
+filter(`Indicator Name`=="GDP growth (annual %)") %>%
+filter(`Country Name`==c("United Kingdom", "United States", "European Union"))
+glimpse(dc)
+```
+## Still not tidy enough!
+#### - Let's tidy some more (select only what we need & transform from wide to long dataset & NA's out).
+#### - & Take a Glimpse again.
+```{r}
+names(dc) 
+dc1 <- select(dc, "Country Name", "Indicator Name", 5:61)
+dc2 <- gather(dc1, key="Year", value="GDP growth (annual %)", -"Country Name", na.rm=TRUE) 
+glimpse(dc2)
+```
+## Still not a tidy dataset!
+#### - Let's remove first 3 rows (no data there).
+#### - & Glimpse again.
+```{r}
+dc2
+dc2 <- dc2[-c(1:3), ]
+dc2
+dc2$Year <- as.numeric(dc2$Year)
+dc2$`GDP growth (annual %)` <- as.numeric(dc2$`GDP growth (annual %)`)
+class(dc2$Year)
+class(dc2$`GDP growth (annual %)`)
+glimpse(dc2)
+```
+## Tidy enough & We can start plotting now!
+#### - Let's import rbokeh and make it a line plot by a country.
+```{r, echo=TRUE, message=FALSE, warning = FALSE}
+library(rbokeh)
+p <- figure(width = 600, height = 350, legend_location = "top_right", title = "GDP Growth (%) USA, EU, UK", logo = NULL) %>%
+  ly_lines(x="Year", y="GDP growth (annual %)", data = dc2,
+    alpha = 0.5, width = 5, col = "Country Name")
+p
+```
+## Congratulations, your first plot! But still not publication quality... let's customize some more...
+#### - We will add points too.
+#### - Put it black and transparent (using alpha transparency)
+```{r, echo=TRUE, message=FALSE, warning = FALSE}
+library(rbokeh)
+q <- figure(width = 600, height = 350, legend_location = "top_right", title = "GDP Growth (%) USA, EU, UK", logo = NULL) %>%
+  ly_lines(x="Year", y="GDP growth (annual %)", data = dc2,
+    alpha = 0.5, width = 5, col = "Country Name") %>%
+ly_points(x="Year", y="GDP growth (annual %)", data = dc2,
+    alpha = 0.5, size = 4, col = "black") 
+q
+```
+## Not bad! But still not publication quality... what about the legend? (it is covering our points)
+```{r, echo=TRUE, message=FALSE, warning = FALSE}
+library(rbokeh)
+r <- figure(width = 600, height = 350, legend_location = "top_right", title = "GDP Growth (%) USA, EU, UK", logo = NULL) %>%
+  ly_lines(x="Year", y="GDP growth (annual %)", data = dc2,
+    alpha = 0.5, width = 5, col = "Country Name") %>%
+ly_points(x="Year", y="GDP growth (annual %)", data = dc2,
+    alpha = 0.5, size = 4, col = "black") %>%
+theme_legend(border_line_width = 1, background_fill_alpha = 0.1, label_text_font_size = "8pt", label_text_align = "left", label_text_font = "Garamond", label_text_font_style = "bold") 
+r
+```
+## Getting better! But still not publication quality... what about the title? 
+```{r, echo=TRUE, message=FALSE, warning = FALSE}
+library(rbokeh)
+s <- figure(width = 600, height = 350, legend_location = "top_right", title = "GDP Growth (%) USA, EU, UK", logo = NULL) %>%
+  ly_lines(x="Year", y="GDP growth (annual %)", data = dc2,
+    alpha = 0.5, width = 5, col = "Country Name") %>%
+ly_points(x="Year", y="GDP growth (annual %)", data = dc2,
+    alpha = 0.5, size = 4, col = "black") %>%
+theme_legend(border_line_width = 1, background_fill_alpha = 0.1, label_text_font_size = "8pt", label_text_align = "left", label_text_font = "Garamond", label_text_font_style = "bold") %>%
+theme_title(text_align = "center", text_font = "Garamond", text_font_size = "14pt", text_baseline = "bottom") 
+s
+```
+## Definitely better! But still not publication quality... what about the axis? 
+#### - Let's make it bold & Garamond too (Pipe it via theme_axis).
+```{r, echo=TRUE, message=FALSE, warning = FALSE}
+library(rbokeh)
+t <- figure(width = 600, height = 350, legend_location = "top_right", title = "GDP Growth (%) USA, EU, UK", logo = NULL) %>%
+  ly_lines(x="Year", y="GDP growth (annual %)", data = dc2,
+    alpha = 0.5, width = 5, col = "Country Name") %>%
+ly_points(x="Year", y="GDP growth (annual %)", data = dc2,
+    alpha = 0.5, size = 4, col = "black") %>%
+theme_legend(border_line_width = 1, background_fill_alpha = 0.1, label_text_font_size = "8pt", label_text_align = "left", label_text_font = "Garamond", label_text_font_style = "bold") %>%
+theme_title(text_align = "center", text_font = "Garamond", text_font_size = "14pt", text_baseline = "bottom") %>%
+theme_axis(axis_label_text_font = "Garamond",
+axis_label_text_font_size = "12pt", axis_label_text_font_style = "bold", major_label_text_font = "Garamond", major_label_text_font_size = "10pt",
+major_label_text_font_style = "bold") 
+t
+```
+## Nearly there! But still not publication quality... it is growth, right? What about to make it visually distinctive (divide positive/negative growth)? 
+#### - rbokeh allows us to do this via ly_abline, so let's Pipe it there ([a,b] to [0,0]).
+```{r, echo=TRUE, message=FALSE, warning = FALSE}
+library(rbokeh)
+library(htmlwidgets)
+u <- figure(width = 600, height = 350, legend_location = "top_right", title = "GDP Growth (%) USA, EU, UK", logo = NULL, tools = c("pan", "wheel_zoom", "box_zoom", "box_select", "reset", "resize")) %>%
+  ly_lines(x="Year", y="GDP growth (annual %)", data = dc2,
+    alpha = 0.5, width = 5, col = "Country Name") %>%
+ly_points(x="Year", y="GDP growth (annual %)", data = dc2,
+    alpha = 0.5, size = 4, col = "black") %>%
+theme_legend(border_line_width = 1, background_fill_alpha = 0.1, label_text_font_size = "8pt", label_text_align = "left", label_text_font = "Garamond", label_text_font_style = "bold") %>%
+theme_title(text_align = "center", text_font = "Garamond", text_font_size = "14pt", text_baseline = "bottom") %>%
+theme_axis(axis_label_text_font = "Garamond",
+axis_label_text_font_size = "12pt", axis_label_text_font_style = "bold", major_label_text_font = "Garamond", major_label_text_font_size = "10pt",
+major_label_text_font_style = "bold") %>%
+ly_abline(a = 0, b = 0, v = NULL, h = NULL, coef = NULL,
+color = "black", width = 1, type = 1, legend = NULL,
+visible = TRUE) %>%
+tool_lasso_select()
+u
+saveWidget(u, file="rbokeh001.html")
+```
+##Congratulations! You have now the publication quality figure ready for you & it's all interactive!
