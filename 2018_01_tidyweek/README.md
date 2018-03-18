@@ -8,9 +8,9 @@ Dataset: https://datacatalog.worldbank.org/dataset/world-development-indicators 
 - [ ] Create a new project
 - [ ] Download & Import data into R
 - [ ] Select an indicator from the dataset
-- [ ] Make comparison
-- [ ] Crate visualization
-- [ ] Publish your result/output 
+- [ ] Make comparison (in time)
+- [ ] Crate visualization in your favourite R DataViz library (simple line chart)
+- [ ] Publish your result/output and link it to #TidyWeek
 -------------------------------------------------------------------------------------------
 # Instructions/What should the repo of a participant include:
 
