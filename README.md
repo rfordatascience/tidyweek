@@ -17,13 +17,7 @@ We thought it best to have a program name that:
 
 # What is Tidy data? Tidy tools?  Tidyverse?
 
-It is a framework and theory by [Hadley Wickham](http://vita.had.co.nz/papers/tidy-data.pdf) that has grown from its humble origins and [expanded](https://www.tidyverse.org/) to data, analysis and tools for [working in data science](http://r4ds.had.co.nz/).
-
-There are 3 fundamental properties that makes data tidy:
-* Each variable forms a column.  
-* Each observation forms a row.  
-* Each type of observational unit forms a table  
-
+It is a framework and theory by Hadley Wickham that has grown from its humble origins and expanded to [data](http://vita.had.co.nz/papers/tidy-data.pdf), [tools](https://www.tidyverse.org/) and workflows for [working in data science](http://r4ds.had.co.nz/).
 
 # TidyWeek Project Outline
 - Regular/weekly projects as output of the mentor-learner partnership during a week 
