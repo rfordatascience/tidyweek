@@ -47,4 +47,4 @@ R4DS Mentors | R4DS learners & Mentors
 
 # Helpful Resources for TidyWeek
 
-1. [Working with Git and Github](resources/git.html)
+1. [Working with Git and Github](resources/git.md)
