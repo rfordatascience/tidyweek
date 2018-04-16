@@ -1,0 +1,56 @@
+---
+title: "TidyWeek Week1"
+output: html_document
+---
+
+# 1. Participants (Name of the Student & Mentor)
+
+```{r setup, include=FALSE}
+#load your packages here and set your code options here.
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# 2. Background information & Objectives of your analysis
+
+* What sort of information does someone else reading this need to know? 
+* What is the objective of your analysis? (What is your driving question?)
+* What sort of steps or structure will your analysis follow?
+
+
+# 3. Data
+
+* What is included in this data? 
+* What isn't included? 
+* Where did it come from?
+* Who collected it and how?
+* What tools were used?
+```{r data}
+#load in your data here!
+```
+
+
+# 4. Tidying Data
+
+* What did you notice that was obvious about your data that needed to be fixed?
+* What steps will you take?
+* What to do about missing/incomplete data?
+
+# 5. Analysis
+
+* What is your approach to answer your question?
+* What methods are you using?
+* What are your assumptions and how are they justified?
+* How can someone learn more about the techniques used?
+* Why did you choose the visualizations that you did?
+
+# 6. Conclusions
+
+* What was the answer to your question?  Why?  
+* Is your conclusion valid?  Under what circumstances?
+* Is there anything else that might better explain your conclusion?
+* What did you learn from this exercise?
+* How would you approach a problem like this next time?
+
+# External resources
+* [github repo](https://github.com/you/your-repo)
+* [link to yout website](https://mywebsite.com)
